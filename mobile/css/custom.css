@@ -9,13 +9,13 @@ body {
 }
 
 .footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     right: 0;
 }
 
 .header {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
 }
