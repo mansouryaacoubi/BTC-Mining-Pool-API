@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+body {
+    background-color: #000;
+    color: #00FF00;
+    font-family: 'Roboto Mono', monospace, sans-serif;
+    text-transform: uppercase;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    text-align:center;
+}
