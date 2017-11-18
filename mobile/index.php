@@ -24,6 +24,19 @@
                 <p class="font-weight-bold h2" id="btc_amount">... <i class="fa fa-btc" aria-hidden="true"></i></p>
                 Converted to EUR:
                 <p class="font-weight-bold h2" id="eur_amount">... <i class="fa fa-eur" aria-hidden="true"></i></p>
+                Latest Share:<br />
+                <div class="ml-2">
+                    <small>Timestamp:</small>
+                    <p class="font-weight-bold h6" id="lat_share_timestamp">...</p>
+                </div>
+                <div class="ml-2">
+                    <small>Difficulty:</small>
+                    <p class="font-weight-bold h6" id="lat_share_difficulty">...</p>
+                </div>
+                <div class="ml-2">
+                    <small>Estimated Yield:</small>
+                    <p class="font-weight-bold h6" id="lat_share_yield">...</p>
+                </div>
             </div>
             <footer class="footer">
                 <div class="container">
