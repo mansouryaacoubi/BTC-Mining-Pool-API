@@ -27,6 +27,9 @@ function startBTCRefresh() {
             $('#btcpayaddr').html(data.addr);
             $('#satoshi_amount').html(sat + addHint);
             $('#btc_amount').html(btc + ' ' + '<i class="fa fa-btc"></i>');
+            $('#lat_share_timestamp').html( Math.round(data.list[0].posix_time/1000) );
+            $('#lat_share_difficulty').html( data.list[0].difficulty );
+            $('#lat_share_yield').html( (data.list[0].amount/1000) + ' Satoshis' );
             getBTCTicker(btc);
             setTimeout( startBTCRefresh, refresh_sec );
         }
