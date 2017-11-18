@@ -27,7 +27,8 @@ function startBTCRefresh() {
             $('#btcpayaddr').html(data.addr);
             $('#satoshi_amount').html(sat + addHint);
             $('#btc_amount').html(btc + ' ' + '<i class="fa fa-btc"></i>');
-            $('#lat_share_timestamp').html( Math.round(data.list[0].posix_time/1000) );
+            var dt = new Date(data.list[0].posix_time);
+            $('#lat_share_timestamp').html( dt.getHours() + ':' + dt.getMinutes() + ':' + dt.getSeconds() );
             $('#lat_share_difficulty').html( data.list[0].difficulty );
             $('#lat_share_yield').html( (data.list[0].amount/1000) + ' Satoshis' );
             getBTCTicker(btc);
@@ -77,9 +78,15 @@ function changeCounter() {
         $('.refresh-counter').html('update in ' + current_sec + ' sec.');
         current_sec--;
     }
+    var time = new Date(Date.now());
+    $('.refresh-time').html( String(time.getHours()).paddingLeft('00') + ':' + String(time.getMinutes()).paddingLeft('00') + ':' + String(time.getSeconds()).paddingLeft('00') );
     setTimeout( changeCounter, 1000 );
 }
 
 function resetChangeCounter() {
     current_sec = refresh_sec/1000;
 }
+
+String.prototype.paddingLeft = function (paddingValue) {
+    return String(paddingValue + this).slice(-paddingValue.length);
+ };
