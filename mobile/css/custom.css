@@ -11,5 +11,11 @@ body {
 .footer {
     position: absolute;
     bottom: 0;
-    text-align:center;
+    right: 0;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
