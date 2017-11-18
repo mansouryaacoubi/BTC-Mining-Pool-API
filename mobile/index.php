@@ -11,6 +11,11 @@
     </head>
     <body>
         <div class="container">
+            <header class="header">
+                <div class="container">
+                    <span class="text-muted refresh-time">Clock</span>
+                </div>
+            </header>
             <div class="col-xs-12">
                 BTC Payout Address:
                 <p><small id="btcpayaddr">loading...</small></p>
@@ -40,7 +45,7 @@
             </div>
             <footer class="footer">
                 <div class="container">
-                    <span class="text-muted refresh-counter">Place here.</span>
+                    <span class="text-muted refresh-counter">Starting in a while...</span>
                 </div>
             </footer>
         </div>
